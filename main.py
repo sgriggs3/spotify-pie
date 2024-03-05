@@ -46,11 +46,11 @@ if not os.environ["CLIENT_ID"] or not os.environ["SECRET_CLIENT_ID"] or not os.e
         "Variables are missing within the .env file. Please ensure you have CLIENT_ID, SECRET_CLIENT_ID, REDIRECT_URL, and USERNAME set.")
 else:
     # Update with your own Spotify Credentials (Client ID, Secret Client ID, redirect, and username)
-    SPOTIPY_CLIENT = os.environ['CLIENT_ID']
-    SPOTIPY_SECRET_CLIENT = os.environ['SECRET_CLIENT_ID']
-    SPOTIPY_REDIRECT = os.environ['REDIRECT_URL']
+    SPOTIPY_CLIENT = os.environ['6a8af75e08324ff3a05dc2194eec8657']
+    SPOTIPY_SECRET_CLIENT = os.environ['f6c805ec2970419cbe3fcb79d733dc71']
+    SPOTIPY_REDIRECT = os.environ['http://localhost:8888/callback/']
     SCOPE = "user-top-read playlist-modify-private playlist-modify-public user-library-modify user-library-read playlist-read-private ugc-image-upload"
-    USERNAME = os.environ['USERNAME']
+    USERNAME = os.environ['willexmen']
 
     # Initialize Spotify
     SP = spotipy.Spotify(auth_manager=SpotifyOAuth(client_id=SPOTIPY_CLIENT, client_secret=SPOTIPY_SECRET_CLIENT,
